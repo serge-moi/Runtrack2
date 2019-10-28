@@ -55,13 +55,16 @@
     body{
         margin: auto;
         width: 400px;
+        background-image:url("img/background.jpg");
+        background-size:cover;
     }
     table{
-        margin-top: 70px;
+        margin-top: 340px;
         border:1px solid black;
         text-align:center;
         width: 330px;    
-        box-shadow: 0px 3px 17px black;
+        box-shadow: 0px 19px 50px #b01212;
+        border-radius:10px;
     }
     th, td{
         border: 1px solid black;
