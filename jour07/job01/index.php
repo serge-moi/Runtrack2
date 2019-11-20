@@ -4,7 +4,7 @@ session_start();
 
 
 if(isset($_GET["dc"])){
-    $_SESSION["nbvisites"] = 0;
+    $_SESSION["nbvisites"] = -1;
     header("Location:index.php");
 }
 

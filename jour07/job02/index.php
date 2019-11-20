@@ -2,14 +2,14 @@
 
 
 if(isset($_GET["dc"])){
-    $_COOKIE["nbvisites"] = 0;
+    $_COOKIE["nbvisites"] = -1;
     header("Location:index.php");
 }
 
 $i= $_COOKIE["nbvisites"];
 
 if(!isset($_COOKIE["nbvisites"])){
-    setcookie("nbvisites", "1", 0);
+    setcookie("nbvisites", "", 0);
 }else{
     $i++;
     setcookie("nbvisites", $i, 0);
